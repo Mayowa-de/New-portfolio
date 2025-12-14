@@ -23,19 +23,19 @@ export default function About() {
             </div>
 
             <section className='flex flex-col gap-3 w-full' aria-label='section-2'>
-                <h3 className='text-white text-2xl font-medium text-start'>My Story</h3>
+                <h3 className='text-white text-2xl font-bold text-start'>My Story</h3>
                 <article className='text-start text-gray-400 font-medium text-[20px] '>A brief, 2-3 sentence introduction covering my passion for frontend development and my professional journey, specializing in creating modern, user-friendly web applications.</article>
             </section>
 
-            <section className='flex flex-col gap-3'>
-                <h3 className='text-white text-2xl font-medium text-start'>My Approach</h3>
+            <section className='flex flex-col gap-3 mt-12'>
+                <h3 className='text-white text-2xl font-bold text-start'>My Approach</h3>
 
                 <article className='text-start text-gray-400 font-medium text-[20px] '>
                     I focus on user-centric design and performance, writing clean, maintainable code with a core stack of React, Nextjs and Tailwind CSS to build beautiful and efficient digital experinces.
                 </article>
             </section>
-            <div className='flex justify-center w-full mt-6 '>
-            <Button variant='contained' className='p-4 md:w-56 w-full h-12'>View my work</Button>
+            <div className='flex justify-center w-full mt-6 text-center'>
+            <Button variant='contained' className='p-4 md:w-56 w-full h-12 '>View my work &#8594;</Button>
             </div>
         </main>
     )
