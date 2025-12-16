@@ -1,12 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Button from '@mui/material/Button'
+import {Typewriter} from 'react-simple-typewriter';
 
 export default function Home() {
     return (
-        <div className='flex flex-col gap-4 text-center justify-center  min-h-screen'>
+        <div data-aos="fade-up" className='flex flex-col gap-4 text-center justify-center  min-h-screen'>
             <main className='flex justify-center flex-col gap-4 text-center w-full'>
             <h1 className='text-white font-bold text-4xl'>Mayowa Ojomu</h1>
-            <h5 className='text-blue-700 text-2xl font-bold'>Frontend Developer</h5>
+            <span className="text-blue-700 text-2xl font-bold relative">
+            <Typewriter 
+            words={['Frontend Developer', 'Web designer', 'Backend Developer']}
+             loop={5}
+             cursor
+             cursorStyle="|"
+             cursorColor='white'
+             typeSpeed={70}
+             deleteSpeed={50}
+             delaySpeed={1000}
+             />
+             </span>
             <article className='flex justify-center text-gray-400 md:w-full   text-justify  '>
                 <p className='text-center flex '>I specialize in creating beautiful, high-performance user interfaces with React, Nextjs and Tailwind CSS</p>
             </article>
